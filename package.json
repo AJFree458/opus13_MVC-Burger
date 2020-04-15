@@ -1,0 +1,25 @@
+{
+  "name": "opus13_mvc-burger",
+  "version": "1.0.0",
+  "description": "An app to eat burgers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJFree458/opus13_MVC-Burger.git"
+  },
+  "author": "Arthur Freeman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AJFree458/opus13_MVC-Burger/issues"
+  },
+  "homepage": "https://github.com/AJFree458/opus13_MVC-Burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "mysql": "^2.18.1"
+  }
+}
