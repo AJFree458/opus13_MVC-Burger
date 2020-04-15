@@ -19,7 +19,7 @@
   "homepage": "https://github.com/AJFree458/opus13_MVC-Burger#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "handlebars": "^4.7.6",
+    "express-handlebars": "^4.0.3",
     "mysql": "^2.18.1"
   }
 }
