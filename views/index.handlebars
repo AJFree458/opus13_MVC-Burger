@@ -1,0 +1,57 @@
+<div class="container">
+    <img src="burger_img.png" alt="Burger!"class="mx-auto d-block my-3" id="picSize">
+</div>
+<h1 class="text-center my-3 font-weight-bold">Eat-Da-Burger</h1>
+<div class="container">
+    <div class="row">
+        <div class="col col-12">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Burgers to DEVOUR</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            {{#each burgers}}
+                                {{#unless devoured}}
+                                    {{> burgers/burger-block devoured=true}}
+                                {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Burgers DEVOURED</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            {{#each burgers}}
+                                {{#if devoured}}
+                                    {{> burgers/burger-block devoured=false}}
+                                {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12 text-center">
+          <h2>Place Your Order!</h2>   
+          <form class="create-form">
+            <div class="form-group">
+                <input type="text" id="burger" name="buger_name" placeholder="Burger Name">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <h3>Enter A Burger You Want To Eat, Then Click The "Submit" Button</h3>
+          </form>
+        </div>
+      </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
