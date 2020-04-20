@@ -35,7 +35,7 @@ This project's repository is at: [opus13_MVC-Burger](https://github.com/AJFree45
 
 ## Deployment
 
-This application is currently deployed through [Heroku](https://ancient-woodland-06582.herokuapp.com/).
+This application is currently deployed through [MVC-Burger on Heroku](https://warm-plains-37625.herokuapp.com/).
 
 ## Usage
 
